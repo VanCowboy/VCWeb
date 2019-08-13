@@ -1,0 +1,45 @@
+.content{
+  margin: 20px;
+}
+
+.poem{
+  font-family: cursive;
+  font-size: 16px;
+  color: green;
+  padding: 25px;
+}
+
+ul
+{
+font-size: 16px;
+}
+
+.thumbnail {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100px;
+  float: left;
+}
+
+.thumbnail:hover {
+  position:relative;
+  top:-25px;
+  left:-35px;
+  width:500px;
+  height:auto;
+  display:block;
+  z-index:999;
+}
+
+.doglist{
+  margin: 15px;
+  font-size: 16px;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+}
+
+.rainbowbridge{
+  margin: 30px;
+}
