@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +10,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { FooterComponent } from './footer/footer.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { Nola2019Component } from './vacation/nola2019/nola2019.component';
+import { OwlModule } from 'ngx-owl-carousel';
+import 'hammerjs';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,7 @@ import { Nola2019Component } from './vacation/nola2019/nola2019.component';
     BrowserModule,
     AppRoutingModule,
     AngularFontAwesomeModule,
-    NgbModule
+    OwlModule
   ],
   providers: [],
   bootstrap: [AppComponent]
