@@ -1,4 +1,5 @@
 <div class="content">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
   <header>
     <img src="..\..\assets\icon\pawprintheart.png" class='thumbnail' style="height: 25px width= 25px"><h2>Our Pack</h2>
     <p>
@@ -6,16 +7,17 @@
       rescued the family as much as the family has rescued the dogs
     </p>
   </header>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-  />
-  <owl-carousel [options]="carouselOptions" [items]="images" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+
+<ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
     <div class="item" *ngFor="let image of images;let i= index">
       <img class="slide-image" src="{{image.image}}" >
       <div class="slide-text">
         <h4>{{image.text}}</h4>
       </div>
     </div>
-  </owl-carousel>
+  </ng-template>
+  </ngb-carousel>
 
   <h3>Our Current Pack</h3>
   <p>All our dogs are rescues and all of them have a story</p>

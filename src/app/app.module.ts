@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { Nola2019Component } from './vacation/nola2019/nola2019.component';
 import { OwlModule } from 'ngx-owl-carousel';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import 'hammerjs';
 
 
@@ -28,7 +29,8 @@ import 'hammerjs';
     BrowserModule,
     AppRoutingModule,
     AngularFontAwesomeModule,
-    OwlModule
+    OwlModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

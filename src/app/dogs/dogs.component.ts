@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-dogs',
@@ -6,35 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dogs.component.css']
 })
 export class DogsComponent {
-  carouselOptions = {
-    margin: 25,
-    nav: true,
-    navText: [
-      '<div class=\'fa fa-chevron-left\'></i>',
-      '<div class=\'fa fa-chevron-right\'></div>'
-    ],
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-        nav: true
-      },
-      600: {
-        items: 1,
-        nav: true
-      },
-      1000: {
-        items: 2,
-        nav: true,
-        loop: true
-      },
-      1500: {
-        items: 3,
-        nav: true,
-        loop: true
-      }
-    }
-  };
 
   images = [
     {
