@@ -1,9 +1,13 @@
+.item{
+  float: left;
+  margin: 10px;
+}
 .slide-image{
   height: 75px;
 }
 
 .slide-text{
-  font-size: 8px;
+  font-size: 18px;
 }
 
 .content{

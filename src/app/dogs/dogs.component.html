@@ -1,22 +1,32 @@
 <div class="content">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
   <header>
-    <img src="..\..\assets\icon\pawprintheart.png" class='thumbnail' style="height: 25px width= 25px"><h2>Our Pack</h2>
+    <img
+      src="..\..\assets\icon\pawprintheart.png"
+      class="thumbnail"
+      style="height: 25px width= 25px"
+    />
+    <h2>Our Pack</h2>
     <p>
       Our family is a rescue family, and in most cases I think the dogs have
       rescued the family as much as the family has rescued the dogs
     </p>
   </header>
 
-<ngb-carousel *ngIf="images">
+  <ngb-carousel *ngIf="images">
     <ng-template ngbSlide>
-    <div class="item" *ngFor="let image of images;let i= index">
-      <img class="slide-image" src="{{image.image}}" >
-      <div class="slide-text">
-        <h4>{{image.text}}</h4>
+      <div class="item" *ngFor="let image of images; let i = index">
+        <a [routerLink]="['/Dogs']" fragment="{{ image.anchor }}">
+          <img class="slide-image" src="{{ image.image }}" />
+          <div class="slide-text">
+            {{ image.text }}
+          </div>
+        </a>
       </div>
-    </div>
-  </ng-template>
+    </ng-template>
   </ngb-carousel>
 
   <h3>Our Current Pack</h3>
@@ -25,7 +35,7 @@
     <a
       ><img class="thumbnail" src="..\..\assets\images\dogs\allie.jpg" alt=""
     /></a>
-    <h3>Allie</h3>
+    <h3 id="Allie">Allie</h3>
     <p>
       After Shadow's passing we wanted another large dog, preferably a Chow mix.
       After looking around Lisa found Allie in a rescue just outside of
@@ -43,7 +53,7 @@
     <a
       ><img class="thumbnail" src="..\..\assets\images\dogs\Broc1.jpg" alt=""
     /></a>
-    <h3>Brocolli (Broc)</h3>
+    <h3 id="Brocolli">Brocolli (Broc)</h3>
     <p>
       Broc started off as a joke, I found him on the
       <a href="http://www.brusselsgriffonrescue.org/" target="_blank"
@@ -58,11 +68,32 @@
       me when my little buddy passes over the rainbow bridge
     </p>
   </div>
+
+  <div class="doglist">
+    <a
+      ><img class="thumbnail" src="..\..\assets\images\dogs\charlie.jpg" alt=""
+    /></a>
+    <h3 id="Charlie">Charlie</h3>
+    <p>
+      Charlie came to us via a friend who was in dire need. Charlie's owners
+      passed away and made no provisions for thier fur family. The executor was
+      not willing to take on the dogs (See Shylo below) and told the family to
+      either find homes or they would be put into a pound. As they are senior
+      dogs their life expectency in a pound was almost non-existent so they
+      became part of the Morgan Rescue family.
+    </p>
+    <p>
+      Charlie has been adopted by and mutally adopted Rheanna. The two of them
+      are thick as thieves at home and when it is bed time Charlie waddles off
+      to Rheanna's room and curls up on her bed.
+    </p>
+  </div>
+
   <div class="doglist">
     <a
       ><img class="thumbnail" src="..\..\assets\images\dogs\guiness.jpg" alt=""
     /></a>
-    <h3>Guinness Spooky (Goober)</h3>
+    <h3 id="Guinness">Guinness Spooky (Goober)</h3>
     <p>
       In the fall of 2017 Reno pet rescue groups had a massive event with most
       of the rescue groups in the area attending (SPCA, Humane Society, Resq,
@@ -77,22 +108,41 @@
       became the latest member of our family.
     </p>
   </div>
+
   <div class="doglist">
     <a
       ><img class="thumbnail" src="..\..\assets\images\dogs\pumpkin.jpg" alt=""
     /></a>
-    <h3>Pumpkin</h3>
+    <h3 id="Pumpkin">Pumpkin</h3>
     <p>
       Pumpkin is kind of a rescue in that he belonged to our oldest daughter.
       When she was no longer able to look after him Lisa quickly made the little
-      retard her own, and now the two are pretty much in seperable. As you can see Pumpkin loves his ducky.
+      retard her own, and now the two are pretty much in seperable. As you can
+      see Pumpkin loves his ducky.
     </p>
   </div>
   <div class="doglist">
     <a
-      ><img class="thumbnail" src="..\..\assets\images\dogs\pic05.jpg" alt=""
+      ><img class="thumbnail" src="..\..\assets\images\dogs\shylo.jpg" alt=""
     /></a>
-    <h3>Zues</h3>
+    <h3 id="Shylo">Shylo</h3>
+    <p>
+      See <a [routerLink]="['/Dogs']" fragment="Charlie">Charlie's</a> story above.
+    </p>
+    <p>
+      Shylo has adopted John as his and will snuggle up to him at every chance.
+      He is usally not to far away from where ever John is. Shylo is a little
+      dog with a huge attitude and has no problem showing his dominence. The end
+      result has been more than a couple of dog skirmishes that have resulted in
+      him being on the losing end.
+    </p>
+  </div>
+
+  <div class="doglist">
+    <a
+      ><img class="thumbnail" src="..\..\assets\images\dogs\Broc1.jpg" alt=""
+    /></a>
+    <h3 id="Zues">Zues</h3>
     <p>
       Zues is also kind of a rescue, and has been affectionately known as the
       welfare dog as all 3 of his owners that I could find all work(ed) for
@@ -107,6 +157,7 @@
       play but the old joints just will not allow him.
     </p>
   </div>
+
   <div class="rainbowbridge">
     <h1 style="text-align: center">
       In memoriam of those who have left us with their love

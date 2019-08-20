@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -23,7 +24,7 @@ import 'hammerjs';
     VacationComponent,
     PageNotFoundComponent,
     FooterComponent,
-    Nola2019Component
+    Nola2019Component,
   ],
   imports: [
     BrowserModule,
