@@ -6,6 +6,16 @@
       rescued the family as much as the family has rescued the dogs
     </p>
   </header>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+  <owl-carousel [options]="carouselOptions" [items]="images" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+    <div class="item" *ngFor="let image of images;let i= index">
+      <img class="slide-image" src="{{image.image}}" >
+      <div class="slide-text">
+        <h4>{{image.text}}</h4>
+      </div>
+    </div>
+  </owl-carousel>
 
   <h3>Our Current Pack</h3>
   <p>All our dogs are rescues and all of them have a story</p>

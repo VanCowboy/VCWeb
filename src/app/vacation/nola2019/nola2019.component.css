@@ -1,4 +1,4 @@
-.owl-carousel {
+.owl-carousel image {
   width: 90% !important;
   margin: 10% auto;
 }
@@ -11,7 +11,7 @@
 .owl-carousel .nav-btn {
   height: 47px;
   position: absolute;
-  width: 26px;
+  width: 56px;
   cursor: pointer;
   top: 30% !important;
 }

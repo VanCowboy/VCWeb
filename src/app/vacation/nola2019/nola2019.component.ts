@@ -26,12 +26,12 @@ export class Nola2019Component {
       1000: {
         items: 2,
         nav: true,
-        loop: false
+        loop: true
       },
       1500: {
         items: 3,
         nav: true,
-        loop: false
+        loop: true
       }
     }
   };
