@@ -40,9 +40,9 @@ export class DogsComponent {
       anchor: 'Shylo'
     },
     {
-      text: 'Zues',
+      text: 'Zeus',
       image: '../../assets/images/dogs/Broc1.jpg',
-      anchor: 'Zues'
+      anchor: 'Zeus'
     }
   ];
 
