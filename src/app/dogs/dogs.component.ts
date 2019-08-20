@@ -46,15 +46,18 @@ export class DogsComponent {
     }
   ];
 
+  // tslint:disable-next-line:use-lifecycle-interface
   ngOnInit() {
     window.addEventListener('scroll', this.scroll, true);
   }
 
+  // tslint:disable-next-line:use-lifecycle-interface
   ngOnDestroy() {
     window.removeEventListener('scroll', this.scroll, true);
   }
 
   scroll = (event: any): void => {
+    // tslint:disable-next-line: variable-name
     const number = event.srcElement.scrollTop;
     console.log(event);
     console.log('I am scrolling ' + number);
