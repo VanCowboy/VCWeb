@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./dogs.component.css']
 })
 export class DogsComponent {
-
+  [x: string]: any;
 
   images = [
     {
@@ -61,9 +62,11 @@ export class DogsComponent {
     const number = event.srcElement.scrollTop;
     console.log(event);
     console.log('I am scrolling ' + number);
-  }
+  };
 
-  constructor() {}
+  constructor() {
+    //this.router.navigate(['/', '']);
+  }
 
   click(i) {
     alert(`${i}`);

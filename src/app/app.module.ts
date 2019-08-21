@@ -14,6 +14,9 @@ import { Nola2019Component } from './vacation/nola2019/nola2019.component';
 import { OwlModule } from 'ngx-owl-carousel';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import 'hammerjs';
+import { Ftbragg2016Component } from './vacation/ftbragg2016/ftbragg2016.component';
+import { Berlin2019Component } from './vacation/berlin2019/berlin2019.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -25,6 +28,9 @@ import 'hammerjs';
     PageNotFoundComponent,
     FooterComponent,
     Nola2019Component,
+    Ftbragg2016Component,
+    Berlin2019Component,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

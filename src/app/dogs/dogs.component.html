@@ -19,12 +19,11 @@
   <ngb-carousel *ngIf="images">
     <ng-template ngbSlide>
       <div class="item" *ngFor="let image of images; let i = index">
-        <a [routerLink]="['/Dogs']" fragment="{{ image.anchor }}">
+          <a [routerLink]="['/Dogs']" fragment="{{ image.anchor }}">
           <img class="slide-image" src="{{ image.image }}" />
-          <div class="slide-text">
-            {{ image.text }}
+          <div class="slide-text">{{ image.text }}
           </div>
-        </a>
+          </a>
       </div>
     </ng-template>
   </ngb-carousel>
@@ -142,11 +141,11 @@
     <a
       ><img class="thumbnail" src="..\..\assets\images\dogs\Broc1.jpg" alt=""
     /></a>
-    <h3 id="Zues">Zeus</h3>
+    <h3 id="Zeus">Zeus</h3>
     <p>
       Zeus is also kind of a rescue, and has been affectionately known as the
       welfare dog as all 3 of his owners that I could find all work(ed) for
-      DWSS. Zues came to us by way of a friend Tim, whose life situation changed
+      DWSS. Zeus came to us by way of a friend Tim, whose life situation changed
       to the point that he could no longer keep Zeus. Lisa and I both agreed
       that we will board Zeus until such time as Tim's life situation changed or
       Zeus passes away

@@ -1,0 +1,32 @@
+<p>
+  <a href="http://parks.nv.gov/parks/berlin-ichthyosaur"><h3>About Berlin-Ichthyosaur</h3></a
+  >
+  Berlin-Ichthyosaur State Park contains a town built in the 1890s that is
+  preserved in a state of arrested decay. A true Nevada ghost town, many of
+  Berlin’s original buildings remain and some of its original residents are
+  interred in the town’s cemetery. Trails throughout the town site tell the
+  story of Berlin and its mine. The park is also home to the most abundant
+  concentration, and largest known remains, of Ichthyosaurs, an ancient marine
+  reptile that swam in a warm ocean that covered central Nevada 225 million
+  years ago. The fossils are protected and displayed at the park’s Fossil House.<br>
+  <i>Berlin-Ichthyosaur State Park is part of the Nevada parks system and one of the darkest places in continental USA. Perfect for star gazing and actually seing the milky way.</i><br>
+</p>
+<p>
+  Below are a bunch of pictures that a coworker (Zachary “Zatch” Farinha) took.
+</p>
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+/>
+<div class="berlin2019-car">
+  <ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <div class="item" *ngFor="let image of images; let i = index">
+        <img class="slide-image" src="{{ image.image }}" />
+        <div class="slide-text">
+          {{ image.text }} by {{ image.photographer }}
+        </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>

@@ -1,0 +1,30 @@
+.berlin2019-car {
+  height: auto;
+  width: auto;
+  overflow: hidden;
+}
+
+.item {
+  float: left;
+  margin: 10px;
+}
+.slide-image {
+  height: 75px;
+}
+
+.slide-text {
+  font-size: 18px;
+}
+
+.content {
+  margin: 20px;
+}
+
+.slide-image:hover {
+  top: -25px;
+  left: -35px;
+  width: 500px;
+  height: auto;
+  display: block;
+  z-index: 999;
+}
