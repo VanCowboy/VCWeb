@@ -31,6 +31,7 @@
     "jquery": "^3.4.1",
     "ngx-hm-carousel": "^1.7.2",
     "ngx-owl-carousel": "^2.0.7",
+    "npm": "^6.11.0",
     "popper": "^1.0.1",
     "popper.js": "^1.15.0",
     "rxjs": "^6.5.2",
@@ -38,7 +39,7 @@
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.802.1",
+    "@angular-devkit/build-angular": "^0.802.2",
     "@angular/cli": "~8.2.1",
     "@angular/compiler-cli": "~8.2.2",
     "@angular/language-service": "~8.2.2",
