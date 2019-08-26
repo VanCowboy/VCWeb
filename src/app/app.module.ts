@@ -17,6 +17,15 @@ import 'hammerjs';
 import { Ftbragg2016Component } from './vacation/ftbragg2016/ftbragg2016.component';
 import { Berlin2019Component } from './vacation/berlin2019/berlin2019.component';
 import { HomeComponent } from './home/home.component';
+import { ArcheryComponent } from './funstuff/archery/archery.component';
+import { GamingComponent } from './funstuff/gaming/gaming.component';
+import { FunstuffComponent } from './funstuff/funstuff/funstuff.component';
+import { LotroComponent } from './funstuff/gaming/lotro/lotro.component';
+import { AdndComponent } from './funstuff/gaming/adnd/adnd.component';
+import { EverquestComponent } from './funstuff/gaming/everquest/everquest.component';
+import { MtgComponent } from './funstuff/gaming/mtg/mtg.component';
+import { MtgpqComponent } from './funstuff/gaming/mtgpq/mtgpq.component';
+import { AstropixComponent } from './funstuff/astropix/astropix.component';
 
 
 @NgModule({
@@ -31,6 +40,15 @@ import { HomeComponent } from './home/home.component';
     Ftbragg2016Component,
     Berlin2019Component,
     HomeComponent,
+    ArcheryComponent,
+    GamingComponent,
+    FunstuffComponent,
+    LotroComponent,
+    AdndComponent,
+    EverquestComponent,
+    MtgComponent,
+    MtgpqComponent,
+    AstropixComponent,
   ],
   imports: [
     BrowserModule,
