@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { AuthGuard } from './auth.guard';
+
 import { MtgpqComponent } from './funstuff/gaming/mtgpq/mtgpq.component';
 import { MtgComponent } from './funstuff/gaming/mtg/mtg.component';
 import { LotroComponent } from './funstuff/gaming/lotro/lotro.component';
@@ -12,17 +16,17 @@ import { Ftbragg2016Component } from './vacation/ftbragg2016/ftbragg2016.compone
 import { Nola2019Component } from './vacation/nola2019/nola2019.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DogsComponent } from './dogs/dogs.component';
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
 import { VacationComponent } from './vacation/vacation.component';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { AdminComponent } from './admin/admin.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'Dogs', component: DogsComponent },
   { path: 'Vacation', component: VacationComponent },
   { path: 'nola2019', component: Nola2019Component },
-  { path: 'ftbragg2016', component: Ftbragg2016Component },
+  { path: 'ftbragg2016', component: Ftbragg2016Component, canActivate:[ AuthGuard] },
   { path: 'berlin2019', component: Berlin2019Component },
   { path: 'funstuff', component: FunstuffComponent },
   { path: 'funstuff/archery', component: ArcheryComponent},
@@ -33,6 +37,8 @@ const routes: Routes = [
   { path: 'funstuff/gaming/lotro', component: LotroComponent },
   { path: 'funstuff/gaming/mtg', component: MtgComponent },
   { path: 'funstuff/gaming/mtgpq', component: MtgpqComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'admin', component: AdminComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
