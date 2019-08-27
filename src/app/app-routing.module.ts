@@ -27,8 +27,7 @@ const routes: Routes = [
   { path: 'Dogs', component: DogsComponent },
   { path: 'Vacation', component: VacationComponent },
   { path: 'nola2019', component: Nola2019Component },
-  // tslint:disable-next-line: whitespace
-  { path: 'ftbragg2016', component: Ftbragg2016Component, canActivate:[ AuthGuard] },
+  { path: 'ftbragg2016', component: Ftbragg2016Component, canActivate: [ AuthGuard] },
   { path: 'berlin2019', component: Berlin2019Component },
   { path: 'funstuff', component: FunstuffComponent },
   { path: 'funstuff/archery', component: ArcheryComponent},
