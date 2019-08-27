@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
   }
   get formControls() { return this.loginForm.controls; }
 
-    login(form){
+    login(form) {
     console.log(form.value);
     this.isSubmitted = true;
     if (this.loginForm.invalid) {
