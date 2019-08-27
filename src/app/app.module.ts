@@ -28,8 +28,9 @@ import { EverquestComponent } from './funstuff/gaming/everquest/everquest.compon
 import { MtgComponent } from './funstuff/gaming/mtg/mtg.component';
 import { MtgpqComponent } from './funstuff/gaming/mtgpq/mtgpq.component';
 import { AstropixComponent } from './funstuff/astropix/astropix.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './auth/login/login.component';
 import { AdminComponent } from './admin/admin.component';
+import { RegisterComponent } from './auth/register/register.component';
 
 
 @NgModule({
@@ -55,6 +56,7 @@ import { AdminComponent } from './admin/admin.component';
     AstropixComponent,
     LoginComponent,
     AdminComponent,
+    RegisterComponent,
   ],
   
   imports: [
