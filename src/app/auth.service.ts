@@ -11,10 +11,10 @@ export class AuthService {
   public login(userInfo: User) {
     localStorage.setItem('ACESS_TOKEN', 'access_token');
   }
-  public isLoggedIn(){
+  public isLoggedIn() {
     return localStorage.getItem('ACCESS_TOKEN') !== null;
   }
-  public logout(){
+  public logout() {
     localStorage.removeItem('ACCESS_TOKEN');
   }
 }
