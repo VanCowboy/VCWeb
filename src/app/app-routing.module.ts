@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AuthGuard } from './auth/auth.guard';
 
 import { MtgpqComponent } from './funstuff/gaming/mtgpq/mtgpq.component';
 import { MtgComponent } from './funstuff/gaming/mtg/mtg.component';
@@ -18,16 +17,14 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { DogsComponent } from './dogs/dogs.component';
 import { VacationComponent } from './vacation/vacation.component';
 import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './auth/login/login.component';
 import { AdminComponent } from './admin/admin.component';
-import { RegisterComponent } from './auth/register/register.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'Dogs', component: DogsComponent },
   { path: 'Vacation', component: VacationComponent },
   { path: 'nola2019', component: Nola2019Component },
-  { path: 'ftbragg2016', component: Ftbragg2016Component, canActivate: [ AuthGuard] },
+  { path: 'ftbragg2016', component: Ftbragg2016Component },
   { path: 'berlin2019', component: Berlin2019Component },
   { path: 'funstuff', component: FunstuffComponent },
   { path: 'funstuff/archery', component: ArcheryComponent},
@@ -38,8 +35,6 @@ const routes: Routes = [
   { path: 'funstuff/gaming/lotro', component: LotroComponent },
   { path: 'funstuff/gaming/mtg', component: MtgComponent },
   { path: 'funstuff/gaming/mtgpq', component: MtgpqComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
   { path: 'admin', component: AdminComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
