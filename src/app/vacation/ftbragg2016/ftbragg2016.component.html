@@ -1,1 +1,41 @@
-<p>ftbragg2016 works!</p>
+<body>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+  <h1>Fort Bragg and Highway 1 Trip - 2016</h1>
+  <owl-carousel
+    [options]="carouselOptions"
+    [items]="images"
+    [carouselClasses]="['owl-theme', 'row', 'sliding']"
+  >
+    <div class="item" *ngFor="let image of images; let i = index">
+      <img class="slide-image" src="{{ image.image }}" />
+      <div class="slide-text">
+        <h4>{{ image.text }}</h4>
+      </div>
+    </div>
+  </owl-carousel>
+
+  <video controls #myVideo>
+      <source src="../../assets/images/ftbragg2016/20160423_103132.mp4" type="video/mp4" />
+      Browser not supported
+  </video>
+  <a (click)="playVideo()"></a>
+  <video controls #myVideo>
+      <source src="../../assets/images/ftbragg2016/20160423_104309.mp4" type="video/mp4" />
+      Browser not supported
+  </video>
+  <a (click)="playVideo()"></a>
+  <video controls #myVideo>
+      <source src="../../assets/images/ftbragg2016/20160423_104807.mp4" type="video/mp4" />
+      Browser not supported
+  </video>
+  <a (click)="playVideo()"></a>
+  <video controls #myVideo>
+      <source src="../../assets/images/ftbragg2016/20160423_105256.mp4" type="video/mp4" />
+      Browser not supported
+  </video>
+  <a (click)="playVideo()"></a>
+
+</body>

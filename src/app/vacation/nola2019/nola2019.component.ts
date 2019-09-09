@@ -24,12 +24,12 @@ export class Nola2019Component {
         nav: true
       },
       1000: {
-        items: 2,
+        items: 4,
         nav: true,
         loop: true
       },
       1500: {
-        items: 3,
+        items: 6,
         nav: true,
         loop: true
       }
@@ -113,9 +113,6 @@ export class Nola2019Component {
     {
       text: 'New Orleans 2019',
       image: '../../../assets/images/nola2019pics/IMG_20190113_141445.jpg'
-    },
-    {
-      text: 'New Orleans 2019'
     },
     {
       text: 'New Orleans 2019',
